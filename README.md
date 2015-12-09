@@ -1,1 +1,3 @@
-# Predator
+Predator - Predictive False Sharing Detection
+=============================================
+
