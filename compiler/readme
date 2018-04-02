@@ -5,5 +5,8 @@ Usage:
 To compile a file with instrumenter, we should explicitly mention the instrumentation tool:
 -finstrumenter
 
-clang -Wl,/home/tongping/work/falsesharing/project/runtime/libdefault64.so -finstrumenter -g -O0
+clang -Wl,$PATCH/libdefault64.so -finstrumenter -g -O0 -o test mytest.c
+
+After that, we could execute the instrumented program. Then the report will be generated if the application has false sharing issues. 
+
 
